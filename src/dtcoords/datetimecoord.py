@@ -59,7 +59,6 @@ class DateTimeCoord:
             p1 = native_float(tar_arr)
 
         rate = p1 / p2
-        print(ref_arr.dtype, tar_arr.dtype, rate)
         return rate
 
     def _process_func_params(self, args, kwargs):
