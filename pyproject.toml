@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "Datetime_Coordinates_TEST"
+name = "datetimecoords"
 description = "A package to provide tools to handle computations with datetime-like data."
 requires_python = ">=3.9"
 dynamic = ["version"]
@@ -15,7 +15,7 @@ dependencies = [
     "pandas>=1.1.5",
 ]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.9",
     "Topic :: Software Development :: Libraries",
@@ -28,14 +28,11 @@ authors = [
 [project.urls]
 repository = "https://github.com/C0nrado/dtcoords"
 
-#[tool.hatch.version]
-#path = "src/dtcoords/__about__.py"
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/dtcoords"]
 
 [tool.hatch.metadata.hooks.custom]
-path = "hatch_build.py"
+path = "version.py"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
