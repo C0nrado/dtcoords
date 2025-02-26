@@ -17,7 +17,7 @@ It provides:
 
 Within your python enviroment type
 
-> `pip install dtcoords`
+> `pip install datetimecoords`
 
 ## Usage
 
